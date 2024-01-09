@@ -21,7 +21,7 @@ defaults:
     values:
       news: true
   - scope:
-      path: "media/people"
+      path: "files/people"
     values:
       people: true
   - scope:
