@@ -1,6 +1,8 @@
 url: 'https://nyu-dh.github.io'
 baseurl: '/website-media'
 
+exclude: [README.md]
+
 defaults:
   - scope:
       path: "media"
