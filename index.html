@@ -1,4 +1,22 @@
 ---
+chat:
+  - speaker: virgil
+    text: |
+      Here you'll find media assets (mostly image files) for use in <a target="_none" class="link" href="https://digitalhumanities.nyu.edu">digitalhumanities.nyu.edu</a> and related communications. 
+      You can browse, preview, and copy links to the files using the UI below.
+  - speaker: virgil
+    text: |
+      Files can be added, removed, or updated via the <a target="_none" class="link" href="https://github.com/nyu-dh/website-media">nyu-dh/website-media</a> repository. 
+      Anything uploaded into one of the sub folders of <a target="_none" href="https://github.com/nyu-dh/website-media/tree/main/media" class="link"><code>/media</code></a> will show up here.
+  - speaker: rhadamanthus
+    show_label: true
+    text: |
+      Pssst! Best avoid spaces, special characters, and capital letters in filenames! 
+      Underscores (e.g., <code>2024_banner_amazing.png</code>) are advised if words need to be broken up.
+  - speaker: virgil 
+    show_label: true
+    text: |
+      Have additonal questions? Check the README of the <a target="_none" class="link" href="https://github.com/nyu-dh/website#nyu-digital-humanities">nyu-dh/website</a> repo or head to Slack.
 types:
   - label: banners
     key: banner
@@ -22,10 +40,12 @@ types:
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
+    <!-- CONTAINER -->
     <div class="container mx-auto lg:px-36 my-8 w-full">
+      <!-- NAVBAR-->
       <nav class="navbar">
         <div class="flex-1 flex flex-wrap">
-          <a href="https://github.com/nyu-dh/website-media" target="_none" class="text-2xl btn btn-outline btn-accent mb-2 mr-4">
+          <a href="https://github.com/nyu-dh/website-media" target="_none" class="text-2xl btn btn-accent mb-2 mr-4">
             <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
             nyu-dh/website-media
           </a>
@@ -39,9 +59,13 @@ types:
           </label>
         </div>
       </nav>
+      <!-- END NAVBAR-->
 
+      <!-- MAIN -->
       <main>
+        <!-- CHAT -->
         <div class="my-8 mx-2 max-w-4xl text-sm">
+          <!-- SUMMARY -->
           <details class="m-2 collapse collapse-plus border border-neutral-content">
             <summary class="collapse-title">
               <div class="chat chat-start max-w-2xl">
@@ -58,98 +82,77 @@ types:
                 </div>
               </div>
             </summary>
+            <!-- END SUMMARY -->
+
             <div class="collapse-content">
-                <div class="chat chat-start">
-                  <div class="chat-image avatar">
-                    <div class="w-10 rounded-full border border-primary">
-                      <img alt="Virgil" src="{{ 'media/misc/virgil.png' | relative_url }}" />
+              {% for bubble in page.chat %}
+                {% if bubble.speaker == 'virgil' %}
+                  <div class="chat chat-start">
+                    {% if bubble.show_label %}
+                      <div class="chat-header text-xs opacity-50 pb-2">Virgil</div>
+                    {% endif %}
+                    <div class="chat-image avatar">
+                      <div class="w-10 rounded-full border border-primary">
+                        <img alt="Virgil" src="{{ 'media/misc/virgil.png' | relative_url }}" />
+                      </div>
+                    </div>
+                    <div class="chat-bubble chat-bubble-primary">
+                      <p class="py-1">
+                        {{ bubble.text }}
+                      </p>
                     </div>
                   </div>
-                  <div class="chat-bubble chat-bubble-primary">
-                    <p class="py-1">
-                      Here you'll find media assets (mostly image files) for use in <a target="_none" class="link" href="https://digitalhumanities.nyu.edu">digitalhumanities.nyu.edu</a> and related communications.
-                      You can browse, preview, and copy links to the files using the UI below.
-                    </p>
-                  </div>
-                </div>
-      
-                <div class="chat chat-start">
-                  <div class="chat-image avatar">
-                    <div class="w-10 rounded-full border border-primary">
-                      <img alt="Virgil" src="{{ 'media/misc/virgil.png' | relative_url }}" />
+                {% else %}
+                  <div class="chat chat-end">
+                    {% if bubble.show_label %}
+                      <div class="chat-header text-xs opacity-50 pb-2">Rhadamanthus</div>
+                    {% endif %}
+                    <div class="chat-image avatar">
+                      <div class="w-10 rounded-full border border-warning">
+                        <img alt="Rhadamanthus" src="{{ 'media/misc/rhadamanthus.jpg' | relative_url }}" />
+                      </div>
+                    </div>
+                    <div class="chat-bubble chat-bubble-warning opacity-70">
+                      <p class="py-1">
+                        <i>{{ bubble.text }}</i>
+                      </p>
                     </div>
                   </div>
-                  <div class="chat-bubble chat-bubble-primary">
-                    <p class="py-1">
-                      Files can be added, removed, or updated via the <a target="_none" class="link" href="https://github.com/nyu-dh/website-media">nyu-dh/website-media</a> repository. Anything uploaded into one of the sub folders of <a target="_none" href="https://github.com/nyu-dh/website-media/tree/main/media" class="link"><code>/media</code></a> will show up here.
-                    </p>
-                  </div>
-                </div>
-      
-                <div class="chat chat-end">
-                  <div class="chat-header text-xs opacity-50 pb-2">
-                    Rhadamanthus
-                  </div>
-                  <div class="chat-image avatar">
-                    <div class="w-10 rounded-full border border-warning">
-                      <img alt="Rhadamanthus" src="{{ 'media/misc/rhadamanthus.jpg' | relative_url }}" />
-                    </div>
-                  </div>
-                  <div class="chat-bubble chat-bubble-warning opacity-70">
-                    <p class="py-1">
-                      <i>Pssst! Best avoid spaces, special characters, and capital letters in filenames! Underscores (e.g., <code>2024_banner_amazing.png</code>) are advised if words need to be broken up.</i>
-                    </p>
-                  </div>
-                </div>
-      
-                <div class="chat chat-start">
-                  <div class="chat-header text-xs opacity-50 pb-2">
-                    Virgil
-                  </div>
-                  <div class="chat-image avatar">
-                    <div class="w-10 rounded-full">
-                      <img alt="Virgil" src="{{ 'media/misc/virgil.png' | relative_url }}" />
-                    </div>
-                  </div>
-                  <div class="chat-bubble chat-bubble-primary">
-                    <p class="py-1">
-                      Have additonal questions? Check the README of the <a target="_none" class="link" href="https://github.com/nyu-dh/website#nyu-digital-humanities">nyu-dh/website</a> repo or head to Slack.
-                    </p>
-                  </div>
-                </div>
-              </div>            
+                {% endif %}
+              {% endfor %}
             </div>
           </details>
+          <!-- END CHAT -->
 
+          <!-- FILE BROWSE -->
           <div class="flex flex-wrap my-6">
           {% for group in page.types %}
           {% assign files = media | where: group.key, true %}
-          <div class="m-3 min-w-96">
+          <div class="m-3 min-w-80">
             <details class="collapse bg-base-200">
               <summary class="collapse-title text-2xl font-medium">
                 <h2>📂 {{ group.label }}</h2>
               </summary>
               <div class="collapse-content"> 
-                <ul>
-                  {% for file in files %}
-                  <li>
-                    <details class="collapse collapse-arrow">
-                      <summary class="collapse-title link link-secondary min-h-0 py-1">{{ file.path }}</summary>
-                      <div class="collapse-content">
-                        <a href="{{ file.path | relative_url }}" target="_none">
-                          <img alt="preview of upload" class="max-w-48 ml-6" src="{{ file.path | relative_url }}"/>
-                        </a>
-                      </div>
-                    </details>
-                  </li>
-                  {% endfor %}
-                </ul>
+                {% for file in files %}
+                  <details class="collapse collapse-arrow">
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">{{ file.path }}</summary>
+                    <div class="collapse-content">
+                      <a href="{{ file.path | relative_url }}" target="_none">
+                        <img alt="preview of upload" class="max-w-48" src="{{ file.path | relative_url }}"/>
+                      </a>
+                    </div>
+                  </details>
+                {% endfor %}
               </div>
             </details>
           </div>
           {% endfor %}
         </div>
+        <!-- END FILE BROWSE -->
       </main>
+      <!-- END MAIN -->
     </div>
+    <!-- END CONTAINER -->
   </body>
 </html>
