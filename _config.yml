@@ -1,0 +1,28 @@
+url: 'https://nyu-dh.github.io'
+baseurl: '/website-media'
+
+defaults:
+  - scope:
+      path: "media"
+    values:
+      media: true
+  - scope:
+      path: "media/banners"
+    values:
+      banner: true
+  - scope:
+      path: "media/icons"
+    values:
+      icon: true
+  - scope:
+      path: "media/news"
+    values:
+      news: true
+  - scope:
+      path: "media/people"
+    values:
+      people: true
+  - scope:
+      path: "media/projects"
+    values:
+      project: true
