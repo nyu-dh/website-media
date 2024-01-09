@@ -7,13 +7,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-
-
     <div class="container mx-auto my-8 w-full">
       <div class="navbar">
         <div class="flex-1 flex flex-wrap">
-          <a href="https://github.com/nyu-dh/website-media" target="_none" class="text-2xl btn btn-outline btn-accent">nyu-dh/website-media</a>
-          <div class="mx-4 text-xl font-mono">asset repository ui</div>
+          <a href="https://github.com/nyu-dh/website-media" target="_none" class="text-2xl btn btn-outline btn-accent mb-2 mr-4">
+            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            nyu-dh/website-media
+          </a>
+          <div class="mx-2 text-xl font-mono">asset repository ui</div>
         </div>
         <div class="flex-none">
           <label class="swap swap-rotate">
@@ -22,6 +23,61 @@
             <svg class="swap-off fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/></svg>
           </label>
         </div>
+      </div>
+
+      <div class="my-8 mx-2 max-w-3xl text-sm">
+
+        <div class="chat chat-start">
+          <div class="chat-image avatar">
+            <div class="w-10 rounded-full">
+              <img alt="Tailwind CSS chat bubble component" src="https://avatars.githubusercontent.com/u/25022284?v=4" />
+            </div>
+          </div>
+          <div class="chat-bubble chat-bubble-primary">
+            <p class="py-1">Welcome!</p>
+          </div>
+        </div>
+
+        <div class="chat chat-start">
+          <div class="chat-image avatar">
+            <div class="w-10 rounded-full">
+              <img alt="Tailwind CSS chat bubble component" src="https://avatars.githubusercontent.com/u/25022284?v=4" />
+            </div>
+          </div>
+          <div class="chat-bubble chat-bubble-primary">
+            <p class="py-1">
+              Here you'll find media assets (mostly image files) for use in <a target="_none" class="link" href="https://digitalhumanities.nyu.edu">digitalhumanities.nyu.edu</a> and related communications.
+              You can browse, preview, and copy links to the files using the UI below.
+            </p>
+          </div>
+        </div>
+
+        <div class="chat chat-start">
+          <div class="chat-image avatar">
+            <div class="w-10 rounded-full">
+              <img alt="Tailwind CSS chat bubble component" src="https://avatars.githubusercontent.com/u/25022284?v=4" />
+            </div>
+          </div>
+          <div class="chat-bubble chat-bubble-primary">
+            <p class="py-1">
+              Files can be added, removed, or updated via the <a target="_none" class="link" href="https://github.com/nyu-dh/website-media">nyu-dh/website-media</a> repository. Anything uploaded into one of the sub folders of <a target="_none" href="https://github.com/nyu-dh/website-media/tree/main/media" class="link"><code>/media</code></a> will show up here.
+            </p>
+          </div>
+        </div>
+
+        <div class="chat chat-start">
+          <div class="chat-image avatar">
+            <div class="w-10 rounded-full">
+              <img alt="Tailwind CSS chat bubble component" src="https://avatars.githubusercontent.com/u/25022284?v=4" />
+            </div>
+          </div>
+          <div class="chat-bubble chat-bubble-primary">
+            <p class="py-1">
+              Have additonal questions? Check the README of the <a target="_none" class="link" href="https://github.com/nyu-dh/website#nyu-digital-humanities">nyu-dh/website</a> repo or head to Slack.
+            </p>
+          </div>
+        </div>
+
       </div>
 
       <div class="flex flex-wrap my-6">
@@ -35,7 +91,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/banners/courses.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/banners/courses.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/banners/courses.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/banners/courses.png"/>
@@ -46,7 +102,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/banners/fellows.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/banners/fellows.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/banners/fellows.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/banners/fellows.png"/>
@@ -57,7 +113,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/banners/getinvolved.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/banners/getinvolved.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/banners/getinvolved.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/banners/getinvolved.png"/>
@@ -68,7 +124,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/banners/home.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/banners/home.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/banners/home.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/banners/home.png"/>
@@ -79,7 +135,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/banners/news.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/banners/news.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/banners/news.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/banners/news.png"/>
@@ -90,7 +146,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/banners/people.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/banners/people.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/banners/people.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/banners/people.png"/>
@@ -101,7 +157,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/banners/projects.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/banners/projects.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/banners/projects.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/banners/projects.png"/>
@@ -112,7 +168,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/banners/resources.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/banners/resources.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/banners/resources.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/banners/resources.png"/>
@@ -123,7 +179,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/banners/seedgrants.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/banners/seedgrants.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/banners/seedgrants.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/banners/seedgrants.png"/>
@@ -146,7 +202,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/icons/bibliography.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/icons/bibliography.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/icons/bibliography.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/icons/bibliography.png"/>
@@ -157,7 +213,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/icons/consultations.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/icons/consultations.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/icons/consultations.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/icons/consultations.png"/>
@@ -168,7 +224,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/icons/mail.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/icons/mail.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/icons/mail.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/icons/mail.png"/>
@@ -179,7 +235,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/icons/potluck.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/icons/potluck.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/icons/potluck.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/icons/potluck.png"/>
@@ -202,7 +258,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/2022DHShowcase.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/2022DHShowcase.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/2022DHShowcase.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/2022DHShowcase.jpg"/>
@@ -213,7 +269,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/20231003-Ayami.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/20231003-Ayami.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/20231003-Ayami.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/20231003-Ayami.jpg"/>
@@ -224,7 +280,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/20231005-DHShowcase.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/20231005-DHShowcase.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/20231005-DHShowcase.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/20231005-DHShowcase.jpg"/>
@@ -235,7 +291,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/20231101-Gavin.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/20231101-Gavin.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/20231101-Gavin.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/20231101-Gavin.jpg"/>
@@ -246,7 +302,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/ArchCuS.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/ArchCuS.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/ArchCuS.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/ArchCuS.png"/>
@@ -257,7 +313,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/DH_list_blast.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/DH_list_blast.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/DH_list_blast.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/DH_list_blast.png"/>
@@ -268,7 +324,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/EdTech.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/EdTech.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/EdTech.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/EdTech.jpg"/>
@@ -279,7 +335,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/SeedGrantHands.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/SeedGrantHands.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/SeedGrantHands.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/SeedGrantHands.jpg"/>
@@ -290,7 +346,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/banner-hatanaka.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/banner-hatanaka.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/banner-hatanaka.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/banner-hatanaka.jpg"/>
@@ -301,7 +357,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/brownies-banner.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/brownies-banner.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/brownies-banner.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/brownies-banner.jpg"/>
@@ -312,7 +368,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/brownies.jpeg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/brownies.jpeg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/brownies.jpeg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/brownies.jpeg"/>
@@ -323,7 +379,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/brownies_book_stec.jpeg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/brownies_book_stec.jpeg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/brownies_book_stec.jpeg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/brownies_book_stec.jpeg"/>
@@ -334,7 +390,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/cochlear.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/cochlear.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/cochlear.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/cochlear.png"/>
@@ -345,7 +401,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/covid_collections.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/covid_collections.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/covid_collections.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/covid_collections.png"/>
@@ -356,7 +412,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/donors-fox-screenshot1.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/donors-fox-screenshot1.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/donors-fox-screenshot1.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/donors-fox-screenshot1.png"/>
@@ -367,7 +423,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/donors-fox-screenshot2.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/donors-fox-screenshot2.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/donors-fox-screenshot2.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/donors-fox-screenshot2.png"/>
@@ -378,7 +434,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/donors-fox-screenshot3.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/donors-fox-screenshot3.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/donors-fox-screenshot3.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/donors-fox-screenshot3.png"/>
@@ -389,7 +445,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/donors-fox-screenshot4.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/donors-fox-screenshot4.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/donors-fox-screenshot4.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/donors-fox-screenshot4.png"/>
@@ -400,7 +456,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/dss_team.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/dss_team.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/dss_team.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/dss_team.jpg"/>
@@ -411,7 +467,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/hayles-deacon.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/hayles-deacon.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/hayles-deacon.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/hayles-deacon.jpg"/>
@@ -422,7 +478,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/hypertext_grab_1.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/hypertext_grab_1.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/hypertext_grab_1.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/hypertext_grab_1.png"/>
@@ -433,7 +489,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/hypertext_grab_2.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/hypertext_grab_2.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/hypertext_grab_2.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/hypertext_grab_2.png"/>
@@ -444,7 +500,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/hypertext_grab_3.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/hypertext_grab_3.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/hypertext_grab_3.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/hypertext_grab_3.png"/>
@@ -455,7 +511,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/hypertext_grab_4.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/hypertext_grab_4.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/hypertext_grab_4.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/hypertext_grab_4.png"/>
@@ -466,7 +522,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/mapping-black-dh.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/mapping-black-dh.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/mapping-black-dh.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/mapping-black-dh.png"/>
@@ -477,7 +533,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/moss.jpeg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/moss.jpeg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/moss.jpeg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/moss.jpeg"/>
@@ -488,7 +544,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/neh.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/neh.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/neh.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/neh.png"/>
@@ -499,7 +555,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/potluckdoodle.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/potluckdoodle.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/potluckdoodle.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/potluckdoodle.jpg"/>
@@ -510,7 +566,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/seeds.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/seeds.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/seeds.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/seeds.jpg"/>
@@ -521,7 +577,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/showcase_fragment.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/showcase_fragment.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/showcase_fragment.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/showcase_fragment.png"/>
@@ -532,7 +588,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/news/what_could_you_do.jpeg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/news/what_could_you_do.jpeg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/news/what_could_you_do.jpeg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/news/what_could_you_do.jpeg"/>
@@ -555,7 +611,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/ahlenius.jpeg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/ahlenius.jpeg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/ahlenius.jpeg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/ahlenius.jpeg"/>
@@ -566,7 +622,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/ansari.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/ansari.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/ansari.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/ansari.jpg"/>
@@ -577,7 +633,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/appert.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/appert.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/appert.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/appert.jpg"/>
@@ -588,7 +644,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/armoza.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/armoza.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/armoza.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/armoza.jpg"/>
@@ -599,7 +655,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/augst.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/augst.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/augst.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/augst.jpg"/>
@@ -610,7 +666,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/ayers.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/ayers.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/ayers.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/ayers.jpg"/>
@@ -621,7 +677,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/bach.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/bach.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/bach.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/bach.jpg"/>
@@ -632,7 +688,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/beinart-smollan.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/beinart-smollan.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/beinart-smollan.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/beinart-smollan.jpg"/>
@@ -643,7 +699,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/belantara.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/belantara.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/belantara.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/belantara.jpg"/>
@@ -654,7 +710,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/bernstein-bunzl.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/bernstein-bunzl.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/bernstein-bunzl.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/bernstein-bunzl.png"/>
@@ -665,7 +721,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/binyamini.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/binyamini.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/binyamini.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/binyamini.png"/>
@@ -676,7 +732,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/brain.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/brain.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/brain.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/brain.jpg"/>
@@ -687,7 +743,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/brill.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/brill.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/brill.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/brill.jpg"/>
@@ -698,7 +754,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/broussard.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/broussard.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/broussard.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/broussard.jpg"/>
@@ -709,7 +765,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/bunde.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/bunde.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/bunde.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/bunde.jpg"/>
@@ -720,7 +776,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/burns.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/burns.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/burns.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/burns.jpg"/>
@@ -731,7 +787,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/busser.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/busser.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/busser.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/busser.jpg"/>
@@ -742,7 +798,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/cabrera-arus.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/cabrera-arus.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/cabrera-arus.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/cabrera-arus.jpg"/>
@@ -753,7 +809,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/chenel.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/chenel.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/chenel.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/chenel.jpg"/>
@@ -764,7 +820,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/coble.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/coble.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/coble.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/coble.jpg"/>
@@ -775,7 +831,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/dang.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/dang.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/dang.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/dang.png"/>
@@ -786,7 +842,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/deniz.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/deniz.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/deniz.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/deniz.png"/>
@@ -797,7 +853,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/desai.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/desai.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/desai.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/desai.jpg"/>
@@ -808,7 +864,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/duncombe.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/duncombe.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/duncombe.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/duncombe.jpg"/>
@@ -819,7 +875,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/ferrer.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/ferrer.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/ferrer.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/ferrer.jpg"/>
@@ -830,7 +886,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/fischer.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/fischer.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/fischer.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/fischer.jpg"/>
@@ -841,7 +897,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/flouty.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/flouty.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/flouty.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/flouty.jpg"/>
@@ -852,7 +908,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/friere.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/friere.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/friere.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/friere.jpg"/>
@@ -863,7 +919,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/gan.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/gan.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/gan.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/gan.png"/>
@@ -874,7 +930,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/hassapopoulou.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/hassapopoulou.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/hassapopoulou.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/hassapopoulou.jpg"/>
@@ -885,7 +941,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/hatanaka.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/hatanaka.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/hatanaka.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/hatanaka.jpg"/>
@@ -896,7 +952,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/heath.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/heath.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/heath.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/heath.jpg"/>
@@ -907,7 +963,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/hoover.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/hoover.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/hoover.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/hoover.jpg"/>
@@ -918,7 +974,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/hoque.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/hoque.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/hoque.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/hoque.png"/>
@@ -929,7 +985,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/jacobs.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/jacobs.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/jacobs.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/jacobs.jpg"/>
@@ -940,7 +996,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/janz.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/janz.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/janz.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/janz.png"/>
@@ -951,7 +1007,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/joslyn.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/joslyn.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/joslyn.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/joslyn.jpg"/>
@@ -962,7 +1018,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/kapp.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/kapp.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/kapp.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/kapp.jpg"/>
@@ -973,7 +1029,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/karlin.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/karlin.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/karlin.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/karlin.jpg"/>
@@ -984,7 +1040,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/katz.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/katz.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/katz.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/katz.jpg"/>
@@ -995,7 +1051,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/kehoe.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/kehoe.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/kehoe.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/kehoe.jpg"/>
@@ -1006,7 +1062,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/kellogg.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/kellogg.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/kellogg.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/kellogg.jpg"/>
@@ -1017,7 +1073,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/keramidas.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/keramidas.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/keramidas.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/keramidas.jpg"/>
@@ -1028,7 +1084,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/kornstein.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/kornstein.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/kornstein.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/kornstein.jpg"/>
@@ -1039,7 +1095,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/lam.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/lam.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/lam.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/lam.jpg"/>
@@ -1050,7 +1106,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/lehine.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/lehine.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/lehine.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/lehine.jpg"/>
@@ -1061,7 +1117,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/maddox.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/maddox.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/maddox.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/maddox.jpg"/>
@@ -1072,7 +1128,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/mahootian.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/mahootian.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/mahootian.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/mahootian.jpg"/>
@@ -1083,7 +1139,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/marshall.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/marshall.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/marshall.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/marshall.jpg"/>
@@ -1094,7 +1150,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/martin.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/martin.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/martin.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/martin.jpg"/>
@@ -1105,7 +1161,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/mccormick.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/mccormick.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/mccormick.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/mccormick.png"/>
@@ -1116,7 +1172,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/mills.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/mills.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/mills.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/mills.png"/>
@@ -1127,7 +1183,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/mistry.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/mistry.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/mistry.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/mistry.jpg"/>
@@ -1138,7 +1194,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/musto.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/musto.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/musto.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/musto.jpg"/>
@@ -1149,7 +1205,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/noonan.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/noonan.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/noonan.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/noonan.png"/>
@@ -1160,7 +1216,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/nyrop.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/nyrop.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/nyrop.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/nyrop.jpg"/>
@@ -1171,7 +1227,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/octavio-orsag.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/octavio-orsag.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/octavio-orsag.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/octavio-orsag.jpg"/>
@@ -1182,7 +1238,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/ozkiral.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/ozkiral.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/ozkiral.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/ozkiral.jpg"/>
@@ -1193,7 +1249,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/perry.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/perry.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/perry.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/perry.jpg"/>
@@ -1204,7 +1260,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/petiwala.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/petiwala.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/petiwala.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/petiwala.jpg"/>
@@ -1215,7 +1271,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/provo.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/provo.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/provo.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/provo.jpg"/>
@@ -1226,7 +1282,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/ralph.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/ralph.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/ralph.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/ralph.jpg"/>
@@ -1237,7 +1293,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/remes.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/remes.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/remes.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/remes.jpg"/>
@@ -1248,7 +1304,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/rogers.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/rogers.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/rogers.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/rogers.png"/>
@@ -1259,7 +1315,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/rosenberg.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/rosenberg.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/rosenberg.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/rosenberg.jpg"/>
@@ -1270,7 +1326,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/russell.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/russell.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/russell.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/russell.jpg"/>
@@ -1281,7 +1337,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/schellmann.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/schellmann.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/schellmann.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/schellmann.jpg"/>
@@ -1292,7 +1348,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/schmidt.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/schmidt.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/schmidt.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/schmidt.png"/>
@@ -1303,7 +1359,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/sloane.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/sloane.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/sloane.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/sloane.jpg"/>
@@ -1314,7 +1370,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/soffer.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/soffer.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/soffer.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/soffer.jpg"/>
@@ -1325,7 +1381,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/spielman.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/spielman.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/spielman.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/spielman.jpg"/>
@@ -1336,7 +1392,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/stec.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/stec.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/stec.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/stec.jpg"/>
@@ -1347,7 +1403,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/stuhler.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/stuhler.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/stuhler.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/stuhler.png"/>
@@ -1358,7 +1414,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/suk.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/suk.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/suk.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/suk.jpg"/>
@@ -1369,7 +1425,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/tawil-souri.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/tawil-souri.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/tawil-souri.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/tawil-souri.jpg"/>
@@ -1380,7 +1436,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/tsolakis.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/tsolakis.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/tsolakis.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/tsolakis.jpg"/>
@@ -1391,7 +1447,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/vinokour.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/vinokour.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/vinokour.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/vinokour.jpg"/>
@@ -1402,7 +1458,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/warsco.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/warsco.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/warsco.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/warsco.png"/>
@@ -1413,7 +1469,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/weatherby.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/weatherby.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/weatherby.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/weatherby.jpg"/>
@@ -1424,7 +1480,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/wolf.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/wolf.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/wolf.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/wolf.jpg"/>
@@ -1435,7 +1491,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/wrisley.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/wrisley.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/wrisley.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/wrisley.jpg"/>
@@ -1446,7 +1502,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/zehngut-willits.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/zehngut-willits.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/zehngut-willits.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/zehngut-willits.jpg"/>
@@ -1457,7 +1513,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/people/zohar.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/people/zohar.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/people/zohar.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/people/zohar.png"/>
@@ -1480,7 +1536,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/aponte.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/aponte.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/aponte.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/aponte.jpg"/>
@@ -1491,7 +1547,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/archcus.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/archcus.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/archcus.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/archcus.png"/>
@@ -1502,7 +1558,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/artists-archive.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/artists-archive.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/artists-archive.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/artists-archive.jpg"/>
@@ -1513,7 +1569,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/bibliopolitica.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/bibliopolitica.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/bibliopolitica.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/bibliopolitica.png"/>
@@ -1524,7 +1580,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/brown.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/brown.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/brown.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/brown.jpg"/>
@@ -1535,7 +1591,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/covid-collections.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/covid-collections.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/covid-collections.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/covid-collections.png"/>
@@ -1546,7 +1602,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/dental-tools.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/dental-tools.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/dental-tools.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/dental-tools.png"/>
@@ -1557,7 +1613,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/digital-theory.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/digital-theory.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/digital-theory.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/digital-theory.jpg"/>
@@ -1568,7 +1624,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/directories.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/directories.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/directories.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/directories.jpg"/>
@@ -1579,7 +1635,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/g2021marshall.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/g2021marshall.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/g2021marshall.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/g2021marshall.png"/>
@@ -1590,7 +1646,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/g2021zehngut-willits.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/g2021zehngut-willits.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/g2021zehngut-willits.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/g2021zehngut-willits.png"/>
@@ -1601,7 +1657,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/g2022caomhanach.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/g2022caomhanach.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/g2022caomhanach.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/g2022caomhanach.jpg"/>
@@ -1612,7 +1668,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/g2022chenel.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/g2022chenel.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/g2022chenel.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/g2022chenel.png"/>
@@ -1623,7 +1679,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/g2022deniz.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/g2022deniz.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/g2022deniz.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/g2022deniz.png"/>
@@ -1634,7 +1690,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/g2022hatanaka.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/g2022hatanaka.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/g2022hatanaka.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/g2022hatanaka.jpg"/>
@@ -1645,7 +1701,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/g2022musto.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/g2022musto.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/g2022musto.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/g2022musto.jpg"/>
@@ -1656,7 +1712,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/g2022rosenberg.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/g2022rosenberg.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/g2022rosenberg.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/g2022rosenberg.jpg"/>
@@ -1667,7 +1723,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/g2022stec.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/g2022stec.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/g2022stec.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/g2022stec.jpg"/>
@@ -1678,7 +1734,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/g2022stuhler.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/g2022stuhler.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/g2022stuhler.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/g2022stuhler.png"/>
@@ -1689,7 +1745,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/g2022zohar.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/g2022zohar.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/g2022zohar.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/g2022zohar.jpg"/>
@@ -1700,7 +1756,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/gig.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/gig.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/gig.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/gig.png"/>
@@ -1711,7 +1767,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/hiring-ai.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/hiring-ai.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/hiring-ai.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/hiring-ai.jpg"/>
@@ -1722,7 +1778,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/historic-fractures.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/historic-fractures.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/historic-fractures.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/historic-fractures.jpg"/>
@@ -1733,7 +1789,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/hypertext_doodle.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/hypertext_doodle.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/hypertext_doodle.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/hypertext_doodle.jpg"/>
@@ -1744,7 +1800,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/inquisite.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/inquisite.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/inquisite.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/inquisite.png"/>
@@ -1755,7 +1811,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/mindmap_example.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/mindmap_example.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/mindmap_example.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/mindmap_example.jpg"/>
@@ -1766,7 +1822,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/moss.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/moss.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/moss.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/moss.jpg"/>
@@ -1777,7 +1833,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/nyscapes.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/nyscapes.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/nyscapes.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/nyscapes.jpg"/>
@@ -1788,7 +1844,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/occupy.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/occupy.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/occupy.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/occupy.jpg"/>
@@ -1799,7 +1855,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/pep.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/pep.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/pep.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/pep.jpg"/>
@@ -1810,7 +1866,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/potluck-no-background.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/potluck-no-background.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/potluck-no-background.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/potluck-no-background.png"/>
@@ -1821,7 +1877,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/potluckdoodle.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/potluckdoodle.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/potluckdoodle.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/potluckdoodle.jpg"/>
@@ -1832,7 +1888,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/sanger.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/sanger.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/sanger.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/sanger.jpg"/>
@@ -1843,7 +1899,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/slave-insurance.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/slave-insurance.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/slave-insurance.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/slave-insurance.jpg"/>
@@ -1854,7 +1910,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/soul-of-reason.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/soul-of-reason.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/soul-of-reason.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/soul-of-reason.jpg"/>
@@ -1865,7 +1921,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/soviet-sphere.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/soviet-sphere.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/soviet-sphere.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/soviet-sphere.jpg"/>
@@ -1876,7 +1932,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/wax.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/wax.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/wax.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/wax.png"/>
@@ -1887,7 +1943,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/wikimedians.jpg</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/wikimedians.jpg</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/wikimedians.jpg" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/wikimedians.jpg"/>
@@ -1898,7 +1954,7 @@
                 
                 <li>
                   <details class="collapse collapse-arrow">
-                    <summary class="collapse-title link link-primary min-h-0 py-1">/media/projects/zinecat.png</summary>
+                    <summary class="collapse-title link link-secondary min-h-0 py-1">/media/projects/zinecat.png</summary>
                     <div class="collapse-content">
                       <a href="/website-media/media/projects/zinecat.png" target="_none">
                         <img class="max-w-48 ml-6" src="/website-media/media/projects/zinecat.png"/>
