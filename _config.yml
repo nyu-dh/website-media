@@ -5,19 +5,19 @@ exclude: [README.md]
 
 defaults:
   - scope:
-      path: "media"
+      path: "files"
     values:
       media: true
   - scope:
-      path: "media/banners"
+      path: "files/banners"
     values:
       banner: true
   - scope:
-      path: "media/icons"
+      path: "files/icons"
     values:
       icon: true
   - scope:
-      path: "media/news"
+      path: "files/news"
     values:
       news: true
   - scope:
@@ -25,6 +25,6 @@ defaults:
     values:
       people: true
   - scope:
-      path: "media/projects"
+      path: "files/projects"
     values:
       project: true
